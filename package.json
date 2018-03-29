@@ -1,0 +1,32 @@
+{
+  "name": "wtc-abc",
+  "version": "1.0.4",
+  "description": "翻译工具",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "wtc-abc": "bin/abc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tcly861204/wtc-abc.git"
+  },
+  "keywords": [
+    "翻译命令",
+    "wtc-abc"
+  ],
+  "author": "tcly861204@hotmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tcly861204/wtc-abc/issues"
+  },
+  "homepage": "https://github.com/tcly861204/wtc-abc#readme",
+  "dependencies": {
+    "bash-color": "0.0.4",
+    "cheerio": "^1.0.0-rc.2",
+    "commander": "^2.15.1",
+    "request": "^2.85.0"
+  }
+}
