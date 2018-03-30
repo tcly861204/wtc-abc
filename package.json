@@ -1,13 +1,14 @@
 {
   "name": "wtc-abc",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "翻译工具",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "wtc-abc": "bin/abc"
+    "wtc-abc": "bin/abc",
+    "abc": "bin/abc"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,7 @@
     "wtc-abc"
   ],
   "author": "tcly861204@hotmail.com",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/tcly861204/wtc-abc/issues"
   },
