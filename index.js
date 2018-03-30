@@ -7,7 +7,6 @@ const appInfo = require('./package.json');
 const out = process.stdout;
 const word = encodeURI(Array.prototype.slice.call(process.argv, 2).join(' '));
 const dictList = ["bing", "youdao"];
-
 if(word==='-V' || word==='-v' || word==='--help'){
 	program
   .version(appInfo.version)
@@ -15,7 +14,6 @@ if(word==='-V' || word==='-v' || word==='--help'){
 	.option('-V, --version', '版本号')
 	.option('--help,--helpList','帮助中心')
   .parse(process.argv);
-	console.log('你正在使用wtc开发的命令行工具');
 	if (program.version) console.log(appInfo.version);
 }else{
 	(function crawl(i) {
@@ -39,8 +37,8 @@ if(word==='-V' || word==='-v' || word==='--help'){
 			out.clearLine();
 			out.cursorTo(0);
 			if (!error && response.statusCode == 200) {
-				var $ = cheerio.load(body);
-				var data = option.action($);
+				let $ = cheerio.load(body);
+				let data = option.action($);
 				if (typeof data === 'string') {
 					i < dictList.length - 1 ? crawl(++i) : console.log(color.cyan(data));
 				} else {
